@@ -1,0 +1,66 @@
+NPM and bundlers (parcel)
+
+Bundlers - rollup, vite, parcel, webpack
+script tag require type attribute for reading the data from js modules
+cdn links are 3rd party links which creates unnecessary dependency on 3rd party service, handling version becomes problematic, and it is heavy for the application as it need to fetch the data from 3rd party service.
+npm solve many problem and provides many other functionality.
+npm have very useful commands and options
+npm init - to initialize a new application
+npm init -y - to automatically initiate pre configured project
+npm i or npm install - to install packages from npm
+npm i -D <package-name> - to intall packages for development aka dev dependencies. (Bundlers remove those packages from production and optimize our app) (optimise or optimize are both have same meaning and pronunciation is similar)
+npm i <package-name> - install package for production 
+npm contains scripts also which are defined under script key predined is npm start 
+transitive dependency - dependency packages which are installed because of packages install
+npm has a alternative yarn
+npm install following files package.json, package-lock.json, and node_module(folder)
+package.json and package-lock.json - these files to maintain our application. 
+package files contains information about packages and contains many other commands.
+The information about packages are stored in the package.json file (Do not add it in gitignore.) is its version number, and dependency. version number of a package have 3 signs with it - tilde(~), caret(^) and No sign()
+No sign - shows exact version
+tidle(~)(major) and caret(^)(minor) - learn more about this signs
+package-lock.json - lock the package and its transitive dependency such as their exact version to be used in application and contain a hash for integrity (?). Do not add it in gitignore.
+node modules is a folder which install the complete packages code and its dependencies to be used in the application which helps to get all functions from our own server which results in optimisation of our app as files are getting read from our own repo.
+
+parcel features
+1.easy to use.
+2.MINIFY 
+3.dev and production BUILDING
+4.create and start a server 
+5.hot reloading - hmr - hot module replacement
+6.clean code - remove console from build field, change variable names. etc
+7.create .parcel-cache (usage faster reload of build) and dist (store our production build)
+8.optimize image
+9.use file watching algorithm (use in reload) - c++
+10.caching while development
+11.super fast build algorithm
+12.https on dev using --https parameter
+13.port number using -p, --port <port> parameter
+14.consistent hashing algorithm
+15.zero config
+16.compression
+17.compatible with older version of browser as well.
+To ignite a app using parcel: npx parcel <entries> 
+To watch (used while building library or backend): npx parcel watch <entries>
+To create single production build: npx parcel build <entries> 
+use npx to run parcel
+entries: 
+# Single file
+parcel src/index.html
+
+# Multiple files
+parcel src/a.html src/b.html
+
+# Glob (quotes required)
+parcel 'src/*.html'
+
+# Directory with package.json#source
+parcel packages/frontend
+
+# Multiple packages with a glob
+parcel 'packages/*'
+
+# Current directory with package.json#source
+parcel
+
+browserlist - npm package - specify the list of browser to be use.
