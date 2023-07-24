@@ -1,0 +1,77 @@
+pollyfill - replacement for newer version of code
+
+browserList - maintain which version of browser our application should work
+
+Babel -
+Convert newer code to old compatible code
+It include polyfill
+To remove console inside our code use - babel plugin transform remove console (package name)
+It understand '<' (angular bracket), browser not understand it.
+
+Parsel - 
+Tree Shaking - Removing unwanted code
+Optimize - js, image
+
+npm run - npx
+
+For react deployment remove build directory Then it will not update current directory. It will create. 
+
+Render updating something in the dom
+Re render dom  (due to  change in dom)
+
+Reconcilation in react - reactjs.org - diff algo
+
+React.createElement is a object converts into html which render on the dom
+React.createElement => object => HTML(DOM)
+
+Adding JSX
+JSX (use babel) => React.createElement => Object => HTML (DOM)
+
+Why JSX?
+JSX to make modifiable html or updating html using javascript
+why - () ? while creating jsx element
+JSX - html like code inside js file but not html code
+JSX uses camel case
+For ex:  tab-index -> tabIndex
+class -> className
+
+AST - Abstract syntax tree
+
+prettier - vs code extension
+
+JSX advantage - readibility, developer friendly
+JSX expression
+
+react component - everything is component in react
+Types: 
+functional - new way
+class based component - old component
+
+functional component is a js fn
+return jsx  
+name of component starts with capital letter - its not mandatory but a widely used convention
+
+fn component return JSX statement should covered 
+for multiline mandatory ()
+for single line optional()
+
+Diff between React element and React Component
+React element - JSX 
+eg - 
+    const h = (
+    <h1>Hello</h1>
+    );
+Rendering - root.render(h)
+
+React Component - function based or class based - 
+eg - 
+    const Hele = () => (
+    <h1>hello world</h1>
+    ); - This is normal js function
+Rendering - root.render(<Hele />)
+Can also be used - Hele() 
+
+IN JSX use {} to write any javascript code
+xss attack - cross site scripting attack
+sanitizes js code - It is done by jsx
+component composition - component inside a component 
