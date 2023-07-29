@@ -1,0 +1,37 @@
+jsx use react create element
+babel - compiler or transcompiler
+functional component is a function
+react.createelement -- object
+
+Is JSX mandatory - no
+Is Es6 mandatory - no
+Is typescript mandatory - no
+Is react mandatory - no
+
+parcel create react repo
+
+Multiline comment - in jsx can be create {}
+
+Same thing 
+{Title()}  <Title /> <Title></Title>
+
+Always plan before create
+App plan
+Layout architecture
+React Fragment
+Dynamic Data
+CSS 
+Inline CSS
+> - Parent and child Tag
+Config driven ui
+optional chaining - ?.
+cdn use for image view 
+Destructuring
+spread
+virtual dom - representation of original dom
+in react reconcilation use virtual dom 
+reconcilation process-
+react uses diff algorithm between original dom vs virtual dom, determines whats need to change
+React fibre -  new reconciltion engine (responsible for diff algo)
+why not use index as key
+no key < index key < unique key
