@@ -1,0 +1,39 @@
+after installing a package we need to configure the package
+folder name in smaller case
+file name in capitalcase for file having default components
+file name in smallcase for file having named components
+constants variables in capital case
+import * as obj --> here obj is a js object, destructuring and all the exported properties can be used.
+in a file there are two type of export - default, or named
+
+
+one way data binding  - react
+modify variable to make input work.
+
+whe can use events to change the function
+like - onChange event -  it expect a callback function
+there is e (event) inside  the events triggering props calback function which contain the value of the function
+changing text inside the input component changes react will rerender that component
+local variable are not preferred inside react suppose you have to change that variable
+every component in react maintains a state.
+u can put some variable in the state 
+every time u have to create a local variable u use state inside react. for eg. : useState hook
+
+imp point regarding hook chapter 5 time 00:55
+
+what is state?
+what is hooks?
+hooks are just normal function.
+every hook have specific function for it.
+what is use state?
+to create state variable
+to use import it like named variable
+this function returns a array first value of this array is variable name and provide a default value by providing inside the argument
+to modify the state variable we need to use the function as per react  
+react use state hook return a array, where 0 idx - variable, 1 idx - modification  function
+event object - default in event emitters - to access valof fields -  event.target.value
+1:25 equivalent variable javascript and jsx
+synthetic events
+two way binding --> updating input where it is reading and writing 
+why do I need a state variable? updating local variable will not trigger rerender, where state variable will trigger rerender 
+react destroys current component & create a new one
