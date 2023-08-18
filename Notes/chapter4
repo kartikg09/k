@@ -35,3 +35,7 @@ react uses diff algorithm between original dom vs virtual dom, determines whats 
 React fibre -  new reconciltion engine (responsible for diff algo)
 why not use index as key
 no key < index key < unique key
+
+package json
+    - main (js, mjs, cjs)
+    - source (html)
