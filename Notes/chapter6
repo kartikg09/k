@@ -1,0 +1,34 @@
+config driven ui -  ui is based on configuration
+react - ui to sync with our state - state variable
+react fibre - latest reconcilation algorithm - fast dom manipulation
+react render the whole component (its check and update only the state variable)
+How to call a api in react ? 1:17
+1. Api should not written with the component because it will rerender everytime when a state change
+-> loads -> api (300 ms) -> render (500 ms)
+-> loads -> render (200 ms) -> api (300 ms) -> update ui (500 ms)
+api calls should be written inside use effect
+useEffect uses
+use effect is hook is function have 2 param 1 is call back and other dependency array 
+it call every time thus we use dependency array to call use effect
+to use it once -> pass empty dependency array
+to use it based on state variable > pass state variable in the dependency array
+
+
+How to call a fetch api?
+async function getRetaurants() {
+ const data = await fetch(url);
+ const json = await data.json();
+ console.log(json);
+}
+
+cors chrome extension to by pass chrome error
+
+shimmer effect - ui look like exact page
+
+Avoid rendering component
+-- Use Early return
+
+JS expression & statement
+JSX -  only js expression can be written. where js statements can also written as expression using ()
+
+why do we data.json() after fetch?
