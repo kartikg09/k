@@ -1,0 +1,73 @@
+useeffect if don't have dependency array than it will not dependent on anything.
+
+Never create a component inside component because of rendering.
+
+never write usestate inside if else
+
+usestate hook is use to create local state variable 
+should not be called outside functional component
+
+why cdn is used for image.
+
+formik is a great library(for adding validation and handling forms)
+
+finding the path - routing 
+react-router-dom - v6
+
+rafce - create a react component automatically
+
+
+createBrowserRouter named import from react-router-dom
+
+Read the documentation
+createBrowserRouter (mostly used) - it is a function  -  configs path -  '/', element -  Component to be rendered in the route
+
+RouterProvider- it is a function and a component - it is used to render router - to render createBrowserRouter
+its config - add createBrowserRouter element function
+
+react-router-dom - it gives a error page
+
+how to create a error page using createBrowseRouter
+on root path add errorElement  - add error component 
+
+useRouteError - function - hook (every hook start with use) - it provide up with the error 
+description
+
+anchor tag refreshes the whole page
+
+// spa - single page application ???
+react application are single page application
+-- it doesnot reload 
+
+// two types of routing - client side routing and server side routing
+what are the diff between 2
+
+server side routing - make network call to navigate different screens on the website
+
+import Link named component from react router dom 
+<Link to="" ></Link>
+What is Link tag? It is again anchor tag but it is different 
+
+react-router-dom - keeping the track of links
+
+nested routing 
+using children configuration inside createBrowserRouter 
+TO get header and footer in all the screen
+
+Outlet provided by react-router-dom be  will be filled by children component 
+
+all the children will go into outlet Component
+
+react router dom tracks page components
+
+route changes dynamically
+
+useParams - hook - provided by react-router-dom - it takes what inside our url - reading the dynamic url
+
+Modular, 
+Maintainable,
+ Reusable, 
+Containable,
+Testable
+
+Keep optional chaining as much as possible 
