@@ -1,0 +1,29 @@
+Aug 29, 2023
+how to understand aggregation in postgres?
+aggregation means joining multiple rows on the basic of the condition.
+For example
+I want to join total leave, dates, and reasons for all employees?
+Table Name - employees_leaves_data
+Table Column id, code, leave_dates, reason
+Soln - 
+if I club leave_dates, count of leave_dates and reason with code. Do this for all employees.
+For implementing above use below query - 
+select e.code, array_agg(leave_dates), count(leave_dates), array_agg(reason) from employees_leaves_data e group_by e.code;
+The above query grouping the data on the basis of employee code and the aggregation functions like array_agg, count to perform the task.
+array_agg club the data from various rows in one row, and count will yeild the total rows which are clubbed together.
+
+if mssql server disconnects reload the server.
+
+React common component rendering Behaviour on navigation like header menu?
+The react has ability to cache current page components. So when navigation is done in react it will render the component. 
+But will not re render thus any change in state while navigation on to another page will not picked up by state. 
+So if using useEffect with empty dependency array will work? 
+No, still it will not pick the change written inside useeffect while navigation if we pass a empty dependency array.
+As, it is rendering the same component which is cached and do not watch state, as no change in dependency array thus on navigation no change will be visible.
+So, always pass the dynamic paths in the dependency array to rerender the component and do the desirable changes. Use useLocation hook in react-route-dom to do that.
+
+How to send long html in smtp mailer?
+Use js string to send the html inside smtp mailer.
+
+what happen if we print a array without casting but inside a backtick (`) braces?
+It will behave like a string and join the data with seperator as comma. 
