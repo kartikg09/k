@@ -1,0 +1,110 @@
+Classy - class based component
+createBrowserRouter - function to create route in react
+RouterProvider - to provide route
+
+Nested Route - children -> children (relative path) - when you put slash (/) it will take host as route path whereas when you will not use it will consider the relative path.
+Children are always rendered inside the outlet component or we can just import the component where we want to render the component
+
+How to build a class based of component?
+use class keyword, extends React.Component (to create a class based component extend 'Component' class from react) A basic Class based component written below
+classs Profile extends React.Component {
+   render(){  
+      return <h1>Profile class component</h1>
+   }
+}
+
+Then most important part of class based component is render method.
+
+We use it in the same way as functional component and as well import is the same.
+ 
+In class based component we use 'this' keyword to get props using as this.props.
+
+How to create state variable in class based component?
+Constructor is the best place to create state variable.
+this.state = {
+    count: 0,
+}
+
+constructor (props) {
+   super(props)
+} --why do we create constructor like that in class based component?
+
+how to use this state variables? this.state.count
+We can use destructuring here.
+
+React uses one big object to maintain the state variable
+
+How to change state variable in class based component?
+ this.setState({count: 1,}) - by passing modified object inside this.setState function
+
+how react life cycle works ? first constructor and then render.
+
+useEffect - works after render
+
+how to call a lifcycle method after render? 
+componentDidMount() {
+   console.log("componentdidmount");
+} 
+
+React Lifecycle for class based component
+constructor
+Render
+ComponentDidMount
+Render
+
+Confident while discussion in interview.
+
+useEffect never re render the component it only called after render 
+But there is rerender?
+It is because of state change.
+
+Render phase - render method 
+Commit phase
+
+In a screen all the render will done first (page compoent, parent component, child component,  sibling component) --- render phase then react update dom and then useEffect will be called. --- commit phase
+
+why we cannot make useEffect async and its callback as async but we can use it in componentDidMount
+
+when you are writing data always destructure
+
+because of async keyword child componentDidMount will be called later then parent componentDidMount
+
+Unmount - when changing the page. It will call unmount component 
+
+React Lifecycle Keyword
+Mounting Updating Unmounting
+Render and commit phase
+
+Concept of lifecycle method - 
+Mounting - 
+  Render Phase - constructor, render
+  Commit phase - react update dom and ref, componentDidMount
+Update -
+  Render Phase - render
+  Commit phase - react update dom and ref, componentDidUpdate
+Unmount - (only component when we leave the page or unmounting the component from screen)
+  Render Phase - 
+  Commit Phase -  componentWillUpdate
+
+Never compare react lifecycle to today functional component they are different all together
+2:50 renderendering
+usecase of componentWillUnmount
+We need to clear things up
+setInterval(() => {console.log("setInterval")|, [1]);
+In single page application once a event is triggered and it will not have closure then the event will run forever. Thus clearInterval is required
+
+call setInterval in the useEffect  and how to clean up?
+return inside useEffect is used for unmounting the component 
+Thus, clear Interval is called inside return statement of useEffect
+
+Internals of react
+
+::marker -  to make text not selectable
+
+(Research) Why do we use super(props) in constructor?
+To recognize from the 'this' keyword inside the constructor lifecycle method
+
+
+(Research) Why can't we have the callback function of useEffect async?
+Because useEffect callback function expects a return statement or nothing at all but using a async function will throw the error and confuses react with the same as async function return promise.
+React customised the error message

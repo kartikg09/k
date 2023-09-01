@@ -27,3 +27,10 @@ Use js string to send the html inside smtp mailer.
 
 what happen if we print a array without casting but inside a backtick (`) braces?
 It will behave like a string and join the data with seperator as comma. 
+
+Aug 30, 2023
+Browser caches the css and js to not rerender. Improve user experience by reloading the website faster.
+Check if all outcomes are working fine after making changes.
+Check the concerned data before making changes.
+Captcha creation
+Changes made to send new field in the db.
