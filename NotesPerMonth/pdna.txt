@@ -34,3 +34,9 @@ Check if all outcomes are working fine after making changes.
 Check the concerned data before making changes.
 Captcha creation
 Changes made to send new field in the db.
+
+sep 1, 2023
+All the db and 3rd party queries should be run from one function inside the code. 
+Thus helps in easy debugging if required.
+Learn more about connections in node js and mongosh. Currently not clear.
+Customisation in compressor.
