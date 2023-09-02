@@ -1,0 +1,57 @@
+Hook is the normal javascript function. We can build our own hook
+
+Why should be even build hooks?
+Reusability
+Readibility
+Maintability - seperation of concern
+Testable - Seperate test cases for utilities
+offload functionality
+Hook have their own reconcilation process.
+
+Create our own hook - whenever you think you can extract code from component, create a hook thus changes your code to cleaner code.
+extract business logic
+reconcilation is working behind the soon for each hook 
+Always remember type of return statement
+Always create a hook with 'use' at the start of the name (such as useOnline) helps react to identify it is a hook. 
+
+how many times should I use event listener for below functionality? 1
+
+useOnline hook
+//user js
+const useOnline = () => {
+  const [isOnline, setIsOnline] = useState(true);
+  useEffect(() => {
+               window.addEventListener("online", () => { setIsOnline(false); });
+               window.addEventListener("offline", () => { setIsOnline(true); });
+   }, []);
+
+   return isOnline;
+}
+
+In network tab under the devtools we have the power to be offline
+
+whenever you add event listener you need to clean it up otherwise it will keep holding the event on other pages also.
+
+removing eventlistener need to pass the same function which passed during creating the event.
+
+Bundler such as parcel used for bundling -- bundling is good   but minifying all the component in 1 index file degrade the performance.
+
+Thus, Using 
+chucking /
+code splitting   /
+dynamic bundling  /
+lazy loading /
+On Demand Loading /
+Dynamic Import
+improves the performance.
+Using dynamic import create multiple bundle file as required. Require lazy() and Suspense() for achieving this. It dynamically loads the data.
+
+Using lazy function (named import from react)
+const Instamart = lazy(() => import())
+
+when you are loading your component in demand react try to suspend it Because may be it is a Promise
+upong on demand loading -> upon loading -> suspend loading
+
+Using Suspense (named import from react) take care of on demand loading also it have fallback prop for shimmer ui. 
+
+Never ever dynamically load a component inside component.
