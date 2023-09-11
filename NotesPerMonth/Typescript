@@ -1,0 +1,50 @@
+# Typescript
+The code converts to javascript.
+Additional syntax to javascript to support a tighter integration with your editor.
+Type interface to give you great tooling without additional code.
+
+Describe your data
+Describe the shape of objects and functions in your code.
+interface Account {                 |
+  id: number
+  displayName: string
+  version: 1
+}
+ 
+function welcome(user: Account) {
+  console.log(user.id)
+}
+Making it possible to see documentation and issues in your editor.
+type Result = "pass" | "fail"
+ 
+function verify(result: Result) {
+  if (result === "pass") {
+    console.log("Passed")
+  } else {
+    console.log("Failed")
+  }
+}
+
+static type-checker <- Typescript
+-> proper error messages
+-> Lets up write know errors while writing the code.
+-> It prevents us from making those mistakes in the first place.
+-> 
+tsc, the typescript compiler
+tooling - set of development tools
+
+How to install typescript? npm i -g typescipt
+Run a ts file using ts compiler - tsc <filename>.ts
+
+tsc --noEmitOnError <filename>.ts - Converting the code in typescript but restraining it to not through a working code.
+
+Typescript code have the power to have the annotation for calling variables. Such as 
+function(a: string, b: date)
+
+Sometime typescript just infer the types for us even if we omit them. Such as:
+let msg = "Hello There!";
+
+We can output the typescript file to javascript
+Typescript has a feature of downleveling
+Choose more recent version using --target es2015
+tsc --target es2015 hello.ts

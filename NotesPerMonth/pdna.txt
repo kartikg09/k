@@ -40,3 +40,58 @@ All the db and 3rd party queries should be run from one function inside the code
 Thus helps in easy debugging if required.
 Learn more about connections in node js and mongosh. Currently not clear.
 Customisation in compressor.
+
+sep 4, 2023
+Ghostscript contains option for multiple viewing option -dPDFSETTINGS are:
+/default - good quality and reasonable file size
+/screen - screen viewing and is suitable for lower resolution screens.
+/ebook - for view ebook readers
+/printer - high quality printing
+/prepress - high quality commerial printing 
+Most to least optimization
+screen > ebook > printer > prepress > default
+
+Moment throwing error when passing the string to parse. As it depreciated the format for iso.
+
+CSS:
+logo
+cards <- inline display
+height, width of cards
+text-align - align the text left
+float - forcely align in the direction
+flex - manages the div
+
+sep 5, 2023
+testing - b2c buy currency product wise
+b2c rate update - moving the middleware here and there
+solution portal - quality options (high, medium and low)
+
+sep 6, 2023
+Created own custom hook
+Created pagination component
+Created date range component
+Created search component
+CSV download middleware using array of objects
+use solution Report api
+
+sep 7, 2023
+update report api
+agent portal - backend and frontend - share button with user
+understand document.queryselector() - react - can be used if re-rendering not required
+
+sep 8, 2023
+understand login/signup concept without login
+high/medium/low image
+remitxnode - document any fix
+array - fill
+
+sep 9, 2023
+eslint config contains - node, import <- libs used in eslint
+eslint, prettier - auto import can be resolved using require statements
+babel/node - lib for import and export
+
+sep 11, 2023
+pg_dump working without specifiying folder
+ghostscript contains a color parameter which decreases its size
+if data is not correct smtp mailer will not work
+if from is not given smtp mailer than in the mail will not show from email in the email.

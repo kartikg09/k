@@ -1,0 +1,17 @@
+React hooks
+useCallback - cache a function defination between re-renders
+const cachedFn = useCallback(fn, dependencies)
+Usage
+- Skipping re-rendering of components
+- Updating state from a memoized callback
+- Preventing an Effect from firing too often
+- Optimizing a custom hook
+
+useRef - lets you reference a value that's not needed for rendering.
+const ref = useRef(initialValue)
+useRef top level component to declare a ref.
+initialValue - ref object's current property to be initially. ignored after initial render.
+returns - object with a single property.
+current - initially set to initialValue. 
+pass the ref attribute to JSX node. react will set its current property.
+next renders -> useRef will retruns the same object.
