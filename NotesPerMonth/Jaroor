@@ -6,18 +6,12 @@ I - Interface Segregation - Client should not be forced to depend on methods tha
 D - Dependency Inversion - High level modules should not depend on low level modules. Both should depend on the absraction.
                         - Abstraction should not depend on details. Detials should depend on abstraction;
 
+ACID: 
+Atomicity, Consistency, Isolation, Durability
+
 OOPS:
 Class - User defined blueprint or prototype from which object are created.
-    1. Modifiers: A class can be public or have default access.
-    2. Class Name: The class name should begin with the initial letter capitalized by convention.
-    3. Superclass (if any): The name of the class's parent (superclass), if any, preceded by the keyword extends. A class can only extend (subclass) one parent.
-    4. Interfaces (if any): A comma-seperated list of interfaces implemented by the class, if any, preceded by the keyword implements. A class can implement more than one interface.
-    5. Body: The class body is surrounded by braces, {}.
 Object - Instance of class. Interact by invoking methods.
-    1. State: attributes of an object. reflects the properties of an object.
-    2. Behaviour: Methods of an object. Reflects the response of an object to other objects.
-    3. Identity: Unique name given to an object that enables it to interact with other objects.
-    4. Method: Collection of statements that perform some specific task and return the result to the caller.
 Pillars: 
     Abstraction: Data abstraction is the property by virtue of which only the essential details are displayed to the user.
     Encapsulation: Wrapping up of data under a single unit. Technically, in encapsulation, the variables or the data in a class is hidden from any other class and can be accessed only through any member function of the class in which they are declared.
