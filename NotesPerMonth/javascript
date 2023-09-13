@@ -1,7 +1,11 @@
 Array(count).fill() -- create a array of size count and fill the numbers
 Array sorting - [].sort(() => {return boolean}) -- conditional sorting js 
 const frequencyMap = new Map(); Eg: Map(4) { 'a' => 7, 'b' => 5, 'e' => 5, 'c' => 2 }
-Properties?
-    - has ? to check if element exist
-    - set ? to add the element
-    - enteries ?
+    - Properties ->
+        - has -> to check if element exist
+        - set -> to add the element
+        - enteries ->
+
+?? - nullish coalescing operator
+ - Returns right handside value (defaultVal) if left handside value (someVal) is null or undefined
+ - someVal ?? defaultVal
