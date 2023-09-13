@@ -6,8 +6,8 @@ I - Interface Segregation - Client should not be forced to depend on methods tha
 D - Dependency Inversion - High level modules should not depend on low level modules. Both should depend on the absraction.
                         - Abstraction should not depend on details. Detials should depend on abstraction;
 
-ACID: 
-Atomicity, Consistency, Isolation, Durability
+Stateless Microservices:
+    Microservices which do not have state. Services which are independent.
 
 OOPS:
 Class - User defined blueprint or prototype from which object are created.

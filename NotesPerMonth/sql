@@ -1,8 +1,8 @@
 SQL
-DML - SELECT, INSERT, UPDATE, DELETE
-DCL - GRANT, REVOKE
-TCL - COMMIT, ROLLBACK, SAVEPOINT
-DDL - view (Databases, Table), DROP, TRUNCATE (TABLE), ALTER (TABLE)
+DML (Data Manipulation Language) - SELECT, INSERT, UPDATE, DELETE
+DCL (Data Control Language) - GRANT, REVOKE
+TCL (Transaction Control Language) - COMMIT, ROLLBACK, SAVEPOINT
+DDL (Data Defination Language) - view (Databases, Table), DROP, TRUNCATE (TABLE), ALTER (TABLE)
 JOIN - INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN
 ORDER BY - ASC, DESC
 GROUP BY - HAVING, GROUP BY COLUMN
@@ -10,3 +10,13 @@ ALIAS - As
 FUNCTIONS - AVG(), SUM(), COUNT(), MIN(), MAX()
 WHERE - 
 WINDOW FUNCTIONS - OVER(), ROW_NUMBER(), RANK(), DENSE_RANK(), NTILE(), LAG(), LEAD()
+
+stored procedure?
+
+What is query trigger?
+
+What is Analytic query?
+Analysing query
+
+ACID: 
+Atomicity, Consistency, Isolation, Durability
