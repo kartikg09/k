@@ -18,3 +18,9 @@ Pillars:
     Inheritance: One class is allowed to inherit the features (fields and methods) of another class.
     Polymorphism: Differentiate between entities with the same name efficiently.
 
+CORS:
+Cross-Origin Resource Sharing (CORS) is a HTTP-header to indicate any origins (domain, scheme, or port) other than its own (meaning the html, css, js (the ui) that is loaded when we call the domain) from which a browser should permit loading resources like (fetch/xhr request).
+It relies on mechanism -- preflight request.
+Preflight request - A request made by the browser in order to check that the server will permit the actual request.
+What does the browser send to the server?
+The browser sends headers that indicate the HTTP method and headers that will be used in the actual request.
