@@ -20,8 +20,10 @@ Transaction query?
 What is Analytic query?
 Analysing query
 
-ORM?
+ORM - Object relation mapping - texchnique that lets you query and manipulate data from a database using an object-oriented paradigm.
 How are you using queries in your projects?
+
+Prepared query -
 
 ACID: 
 Atomicity, Consistency, Isolation, Durability

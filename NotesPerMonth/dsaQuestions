@@ -3,3 +3,6 @@
 3. Array of number contains each number 2 times except 1
 4. Given a sorted array. Square each element of array and return the result in decending order.
 5. Given a tree print left view.
+6. Sort string based on frequency.
+7. Reversing a string using recursion.
+8. Shifting array element within an interval

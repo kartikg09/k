@@ -1,0 +1,15 @@
+1. In memory Store for recently played songs
+song-user pairs
+users data - name, id, mobile, length
+songs data - name, id, stream_data_url
+playlist structure?
+user id, song id -- it is a map of both table.
+length constraint -- user table contains such that for each we define max length and it is changable.
+
+Code using java.
+1. Importing the defaultdict and deque classes from the collection module. Use for implementing in-memory state.
+2. Class - RecentlyPlayedStore that represents the in-memory state for recently played songs. The class has init method
+that takes a capacity parameter, which determines the maximum number of songs that can be stored per user. Also initialize a empty defaultdict.
+3. add_song method 
+4. user exceeds the capacity, the least recently played song is removed using popleft()
+5. get_recently_played_songs method is defined to retrieve the recently played songs for a given user.

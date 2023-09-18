@@ -105,3 +105,9 @@ Learnings:
 Html mailer of smtp is very handy and easy to use. Same like handling strings.
 Divide your components into the files.
 State value can be shown, set and passed in the dependency array of useEffect through the props in child component.
+
+Sep 16
+In memory Store for recently played songs
+Accommodate a set numbers of recently played songs per user.
+song-user pairs
+eliminate songs

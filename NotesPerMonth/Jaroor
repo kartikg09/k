@@ -24,3 +24,12 @@ It relies on mechanism -- preflight request.
 Preflight request - A request made by the browser in order to check that the server will permit the actual request.
 What does the browser send to the server?
 The browser sends headers that indicate the HTTP method and headers that will be used in the actual request.
+
+Tell about Api testing and frameworks?
+Various testing frameworks and the strategies.
+
+What is Agile Experience?
+
+What are types of assertions?
+
+DRY - Don't Repeat Yourself
