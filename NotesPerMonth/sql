@@ -15,7 +15,6 @@ stored procedure?
 
 What is query trigger?
 
-Transaction query?
 
 What is Analytic query?
 Analysing query
@@ -25,5 +24,19 @@ How are you using queries in your projects?
 
 Prepared query -
 
-ACID: 
-Atomicity, Consistency, Isolation, Durability
+Transaction query?
+Group a set of tasks into a single execution unit. Each transactions begins with a specific job and ends when all the tasks in the group successfully completed. If any of the tasks fails, the transaction fails.
+A database transaction, by defination, must be atomic, consistent, isolated, and durable. (ACID) to ensure concurrent execution of multiple transactions without conflict.
+ACID:
+Atomicity: The outcome of a transaction can either be completely successful or completely unsuccessful. The whole transaction must be rolled back if one part of it fails.
+Consistency: Transaction maintain integrity restrictions by moving the database from one valid state to another.
+Isolation: Concurrent transations are isolated from one another, assuring the accuracy of the data.
+Durability: Once a transaction is committed, its modifications remain in effect even in the event of a system failure.
+
+Transaction control commands are only used with the DML Commands such as - INSERT, UPDATE, and DELETE.
+
+-> SQL statements are grouped together using transactions.
+-> They promise that either all changes are made or none at all.
+-> Reliability is ensured by the ACID qualities.
+-> Start a transaction with "BEGIN TRANSACTION", and finish it with "COMMIT" or "ROLLBACK" to complete or undo changes. 
+-> SAVEPOINT to rollback to certain point
