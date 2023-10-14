@@ -1,1 +1,19 @@
-1. In memory Store for recently played songs
+Function requirement - what should our system do
+Non Functional requirement - not written but required to fulfill
+Paypal system design
+Availability, Scalability, Performance, Data Integrity,
+Simplicity, Flexibility, Manageability, and Maintainability
+
+Payment gateway system design 
+Functional requirement:
+-> Allows multiple ways of payments.
+-> Secure Payment details.
+-> Secure transactions
+-> Avoid Double Payment
+-> Fast Response
+-> Handle Timeout and failure
+
+Non Functional Requirements
+-> Highly Consistent
+-> Highly available
+-> Scalable
