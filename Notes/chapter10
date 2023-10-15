@@ -1,0 +1,60 @@
+Uber has its own ui framework - Base ui
+
+Why to choose framework?
+Optimize css
+Save time
+
+SCSS
+ - Nesting
+ - variable
+ - Mixins
+ - Reusable
+
+Component Libraries - Material UI, Base UI, Ant, Chakra
+- responsible ui
+
+styled components
+
+tailwind css framework
+ - css on the go(in the same file)
+ - reusability
+ - less bundle size
+ - flexible ui (Customization)
+ - documentation
+
+what is framework?
+
+tailwind css has its own style of writing
+- its overwrite css properties
+- it has a set of prefined classes which have their own properties
+- every style you write are associated with class
+- it is installed differently for different type of stacks like parcel, next js 
+- study of tailwind css config - content,  theme, plugin
+- in content config we specify the filenames to be included in the tailwind css
+- .postcssrc - compile the tailwind css to normal css
+- we write the 3 lines inside the css file 
+-- @tailwind base;
+-- @tailwind components;
+-- @tailwind utilities;
+
+
+steps to install and configure tailwind file?
+1.install the tailwind libraries
+2.a config file is created update the file to make the configuration such that it can read js and html files.
+3. create a .postcssrc file and add the basic configuration it will convert tailwind css to normal css.
+4.  inside a css file write 3 lines - base, components, utilities
+5. a vs code tailwind css intellisense
+ - its give sugesstions of classes and what css is used by the class 
+- square backet notation for dynamic classes
+- the size of build will be small because tailwind make sure only to include those classes which are used.
+- usemostly defined classes
+- mobile first classes in tailwind success
+
+pros
+- easy to use
+- no duplicate css
+- faster time
+- easy to debug
+cons
+- high learning curve 
+- have to add multiple classes make it unreadable
