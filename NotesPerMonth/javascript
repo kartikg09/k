@@ -1,11 +1,16 @@
-Array(count).fill() -- create a array of size count and fill the numbers
+Array(count).fill() -- create a array of size count and fill it with undefined number can be used when for .map() or using other array properties.  
 Array sorting - [].sort(() => {return boolean}) -- conditional sorting js 
 const frequencyMap = new Map(); Eg: Map(4) { 'a' => 7, 'b' => 5, 'e' => 5, 'c' => 2 }
     - Properties ->
         - has -> to check if element exist
         - set -> to add the element
-        - enteries ->
+        - enteries -> to search
 
 ?? - nullish coalescing operator
  - Returns right handside value (defaultVal) if left handside value (someVal) is null or undefined
  - someVal ?? defaultVal
+Js object to get key from variable use [] to access the value of object
+
+javascript replace function
+single replace - str.replace(/string/, 'replacement')
+global replace - str.replace(/string/g, 'replacement') (g - global)
