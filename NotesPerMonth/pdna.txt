@@ -111,3 +111,139 @@ In memory Store for recently played songs
 Accommodate a set numbers of recently played songs per user.
 song-user pairs
 eliminate songs
+
+sep 18
+in js object to get key from variable use [] to access the value of object
+how should proper validation should be applied form react? any library
+
+sep 20
+javascript replace function
+single replace - str.replace(/string/, 'replacement')
+global replace - str.replace(/string/g, 'replacement') (g - global)
+n = 4
+
+//n-no. of nodes, r-result, lt-left subtree, rt-right subtree
+if n = 0, r = 1 (default)
+if n = 1, r = 1 (Only case - lt-0, rt-0)
+if n = 2, r=2 -- lt-1,rt-0 lt-0,rt-1
+if n=3, r=5 - lt-2,rt-0 lt-1,rt-1 lt-0,rt-2
+if 
+
+sep 21
+SMTP config for hostgator using nodemailer
+- it usually work with ssl config so PORT is 487
+- it host usually mail.<domain-name> for example MAIL - b2c@example.in, HOST - mail.example.in
+{
+host: HOST, // You should replace this with HostGator's SMTP server hostname
+port: PORT,
+auth: {
+    user: MAIL,
+    pass: PASSWORD, // Use an App Password if 2-factor authentication is enabled
+    }
+}
+- to login with hostgator you need to login to its cPanel - http://www.example.in/webmail (use your domain instead of www.example.in)
+- inside cPanel search for "configure mail client" option for search tsl/ssl mail configuration where hostname, port, and mailid are given.
+
+sep 22
+git diff <branch-name> -- shows diff between 2 branches
+useEffect of child of react will work if the child component render
+Tabs and Tab - react bootstrap is good for making Tabs
+how to maintain fields and search component in react?
+how to maintain multiple products?
+how to scale the application?
+What is the meaning of query analysis and what are its process?
+Where are the transaction queries used?
+
+sep 23
+a+b+c = 0
+count pairs
+using 3 loops - brute force
+sort array - count needs to return no idx
+two poniter at start and end of array and a pointer to move
+between 2
+increament and decrement?
+cases
+-4,-1,-1,0,1,2
+a = -4
+c = 2
+b = -1,-1,0,1
+a+c < 0 then b > 0
+b = 0,1
+a+c < max(b)
+a++;
+class Solution {
+public:
+    vector<vector<int>> threeSum(vector<int>& nums) {
+        sort(nums.begin(), nums.end());
+        int startIdx = 0;
+        int endIdx = nums.size()-1;
+        int res = 0;
+        while(startIdx < endIdx) {
+            
+        }
+    }
+};
+
+setting alias for command in ubuntu-
+1. open .bashrc file using -- nano ~/.bashrc
+2. alias crom='google-chrome' for setting alias of google chrome
+
+In markdown files use mermaid to create diagram.
+Ref: https://www.freecodecamp.org/news/diagrams-as-code-with-mermaid-github-and-vs-code/
+
+Preflight
+modern-normalize
+set of base styles for tailwind projects that are designed to smooth over cross-browser inconsistencies and make it easier for you to work within the constraints of your design system.
+Automatically injects these styles when you include '@tailwind base' in your css.
+Effects:
+Default margins are removed
+Headings are unstyled
+Lists are unstyled
+Images are block-level
+Images are constrained to the parent width
+Border styles are reset globally
+Extending Preflight - '@layer base'
+Ref: https://tailwindcss.com/docs/preflight
+
+Priority of classes while adding them in class option
+class="mx-auto p-auto bg-green"
+order - mx-auto < p-auto < bg-green (Check again)
+
+Designed 1st header after 2 years through imagination not reference or copying
+Used background color - as shown in most of the website
+Used mx-auto container - to containerize the header with margin auto (used bg color in parent div to cover the entire heading in webpage)
+Used flex and its property justify-center inside the header 
+flex properties on child divs but not on any of their childs thus can be used with grouping
+used margin auto and padding for spacing
+
+sep 25,
+Apache Kafka - A distributed streaming platform
+Stream - infinite data, data that never ends. It just keeping arriving, and you can process it in real-time.
+Distributed means that Kafka works in a cluster, each node in the cluster is called Broker. Those brokers are just servers executing a copy of apache Kafka.
+Kafka is a set of machines working together to be able to handle and process real-time infinite data.
+
+Pros:
+The distributed architecture is one of the reasons that made Kafka so popular. The Brokers is what makes it so resilient, reliable, scalable, and fault-tolerant. That's why Kafka is so performer and secure.
+
+Messaging works:
+Producer: Who Produces and send the messages to one or more queues.
+Queue: A buffer data structure, that receives (from the producers) and delivers messages (to the customers) in a FIFO (First-In First-Out) way. When a message is delivered, it's removed forever from the queue, there's no chance to get it back.
+Consumer: Who is subscribed to one or more queues and receives their messages when published.
+
+Kafka architecture
+Producer --> Cluster --> Consumer
+Cluster contain's nodes(Broker)
+In this we do not have Queue concept, we have Topics.
+The Topic is a very specific type of data stream, it's very similar to a Queue, it receives and delivers messages as well.
+
+sep 26:
+3rd party request <- network <- inspect (to only show 3rd party request) in the network calls
+React custom hook returning setElement do not works
+javascript condition sorting works with -1, 0, 1 not with t/f
+In smtp, without from email id the mail couldn't be send to gmail maybe outlook will accept because smtp will send the mail. So always add from in the smtp mail.
+
+sep 27:
+Google LLC is an American multinational technology company focusing on artificial intelligence, online advertising, search engine technology, cloud computing, computer software, quantum computing, e-commerce, and consumer electronics
+
+--Write about the created component - Done
+--Subscriber inside useContext
