@@ -15,3 +15,22 @@ returns - object with a single property.
 current - initially set to initialValue. 
 pass the ref attribute to JSX node. react will set its current property.
 next renders -> useRef will retruns the same object.
+
+useContext
+Call this at the top level of your component to *read* and *subscribe* to context.
+The context itself does not hold the information, it only represents the kind of information you can provide or read from components.
+
+Parameter: Some Context.
+
+Returns: context value. Always up to date. React re renders components that read some context if it changes.
+
+How context value determined?
+It is determined as the value passed to the closest (maybe the closest parent component that determines the context value) SomeContext.Provider above the calling component in the tree. If there is no such provider, defaultValue.
+Doesn't consider providers in the component from which you're calling useContext().
+Object.is?
+
+How to create, read, pass, and update the context?
+const ContextName = createContext(null); // creating the context here null is the fallback default value
+const contextValue = useContext(contextName); // reading the context value
+<ContextName.Provider value='defaultValue'><ComponentToBePassed /></ContextName.provider> //passing the context
+use state instead of passing static default value. To update the context.
