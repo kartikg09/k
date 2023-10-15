@@ -1,0 +1,19 @@
+flex -
+flex-container
+properties 
+flex-wrap -- wrap, no-wrap, wrap-reverse
+flex-direction -- row, column, row-reverse, column-reverse
+flex-flow -- shorthand property for setting both the flex-direction and flex-wrap properties.
+justify-content -- align the flex items -- center, flex-start, flex-end, space-around, space-between
+    -- center - aligns the flex items at the center of the container
+    -- flex-item - aligns the flex items at the beginning of the container
+    -- flex-end - aligns the flex items at the end of the container
+    -- space-around - displays the flex items with space before, between, and after the lines
+    -- space-between - displays the flex items with space between the lines
+align-items -- align the flex items -- center, flex-start, flex-end, stretch, baseline,
+    -- center - aligns item in the middle of the container
+    -- flex-start - aligns item at the top of the container
+    -- flex-end - aligns items at the bottom of the container
+    -- stretch - stretches the flex item to fit the container 
+    -- baseline - aligns the flex items such as their baselines aligns 
+align-content -- 
