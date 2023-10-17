@@ -17,3 +17,69 @@ Non Functional Requirements
 -> Highly Consistent
 -> Highly available
 -> Scalable
+-> Performance
+
+High level design
+-> System architecture
+-> Database design
+-> Brief description of systems, services, platforms, and relationships among modules.
+It Consist Flows:
+1. Data Flows
+2. Flowcharts
+3. Data Structures
+
+Explaining the connection between system components and operations which depict the logic, &
+Architecture design needed (for the system's functionality and flow) for each and every module of the system.
+
+HLD doesnot include physical requirement, port details, VLAN, and many other details.
+
+HLD terms:
+1. Capacity Estimation
+2. HTTP method
+3. Web sockets
+4. Pooling
+5. Server-Sent Events
+6. Filtering and Logging
+7. Rate Limiting
+8. Resiliency
+9. Paging and Filtering
+10. Logging
+Roadmap of the system are based of HLD
+Capacity Estimation
+Characteristics behaviour of a server (like concurrency) which is measured across throughput and latency within the system.
+Concurrency - 
+Throughput - 
+Latency - 
+
+HTTP Method:
+GET, POST, PUT
+2 ways to send data from server to client:
+Using Websockets, Using pooling
+
+Web sockets:
+real time communication
+cannot let our system wait for response
+Example: text messaging service, stock price system, food and grocery delivery systems.
+
+Pooling:
+Long pooling and short pooling
+Long pooling wait for the server to send the response
+Short pooling immediately send the data at fixed intervals.
+
+Server Sent Events:
+Purposely built as one-way communication from servers to clients in specific design systems. Example-> Realtime streaming.
+
+Filtering:
+The control room api supports filtering, pagination, and sorting for endpoints that return arrays of resources.
+
+Rate Limiting
+Restrict the number of events that can be done in a timeframe by restricting the number of requests a sender can send in a given period of time.
+
+Resiliency
+Avoid fault and failure tolerance by
+Replication, Redundancy, Availability
+
+Paging
+
+Logging
+

@@ -247,3 +247,7 @@ Google LLC is an American multinational technology company focusing on artificia
 
 --Write about the created component - Done
 --Subscriber inside useContext
+
+oct16
+react use effect array can have state or props
+react api calls use effect work after normal use effect
