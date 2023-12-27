@@ -1,0 +1,80 @@
+data is the new oil
+data layer application layer
+create a child component for creating a similar type of sections in a page
+create a hide show collapsible accordion - send the data through child prop.
+
+ui layer | data layer
+what do we write to create ui layer? jsx
+who convert is jsx? babel
+what is jsx converts to? javascript objects
+what is this big object structure known as? virtual dom.
+what is the role of virtal dom? reconcilation
+what is the diff between? new dom vs old dom
+
+the whole ui layer is powered by data layer.
+how the ui is rendered with data?
+how data with in the application is maintained? states and props
+
+
+what is the diff between state and props?
+state are local variable
+props are elements from one element to other element
+
+
+Props drilling
+cons:
+passing the data in multiple components 
+Change in the one of the component can effect the code
+
+
+use custom hooks 
+
+React dev tools
+React router dom is doing this.
+
+lifting the state up
+profilers tab in react dev tools shows exactly which component is taking more time and other stuffs such as for analysing the component
+
+how to use context in react?
+Create a context in a file
+You can utilize context in each and every component
+
+createContext - create the context 
+Context.Provider - update the context
+useContext - to use the context value
+const UserContext = createContext({
+   user: {
+      name: "Dummy Name",
+      email: "dummy@gmail.com"
+   }
+});
+
+UserContext.displayName = "UserContext";
+
+export default UserContext;
+
+---------
+
+Update the value
+
+const [user, setUser] = useState()
+
+<UserContext.Provider  value={{ user, setUser }}>
+  <MyComponent />
+</UserContext.Provider>
+
+-------
+
+Consume The context
+
+const {user, setUser} = useContext(UserContext);
+
+return (<>
+<h1>{user}</h1>
+<button onClick={e => setUser(e.target.value)} value={user}></button>
+</>)
+
+Lifting state up https://legacy.reactjs.org/docs/lifting-state-up.html
+
+React Context
+https://legacy.reactjs.org/docs/context.html

@@ -251,3 +251,155 @@ Google LLC is an American multinational technology company focusing on artificia
 oct16
 react use effect array can have state or props
 react api calls use effect work after normal use effect
+
+oct30
+added holiday margin code
+created api for adding multitraveler addition and update
+
+Nov 3
+multitraveler api
+pan api
+
+-> rate service
+-> logs
+-> multiservice
+
+Nov 6
+holiday margin issue fix
+hcheck fix
+3rd screen multitraveller api
+discussion regarding the flow of payment on quotation success
+
+Nov 10
+Resolve bugs multitraveler api
+-> delete product feature - D
+-> send quotation feature
+-> logging compressor
+-> crm
+-> frontend
+-> indus
+-> branch list optimization
+-> bug agent portal - D
+-> holiday list api change frontend rate admin solution portal
+
+-> https://www.geeksforgeeks.org/geeksforgeeks-interview-experience-for-software-developer/
+-> What are the topics I need to revise or learn before interview?
+-> How to remember such a long list of problems and their approaches?
+-> How to apply faster for the companies?
+
+Nov 16
+-> Log compressor
+-> CRM call
+-> Send quotation mail
+
+Set variables in mail
+create a approve and reject screen with api using parcel
+create a create pay now
+same table is used multiple places how to handle this
+Handle payment response
+send mail encrypt data approve and reject
+
+dec1
+purpose vala - D
+reference number - D
+city and state text
+tcs flag - D
+order status - D
+rate update - traveller data - D
+
+dec 8
+Currency validation (Max limit CN)
+LRS Declaration popup (Remittance Rate Update)
+Add a new primary key to the table
+To add a new primary key in the table.
+Create a duplicate table containing all the required columns and a new primary key column.
+Use query insert into duplicate_table_name (...) select (...) from table_name (use order by optional)
+Now Rename table_name - table_name_backup & duplicate_table_name - table_name
+We have added a new primary key and preserved the data.
+
+dec 9
+Company Work - LRS declaration Check
+Interview preparation
+DSA
+Design system
+General interview questions includes CN, DBMS, and OS
+JAVA projects
+Interviews
+
+dec11
+number format
+tcs
+gst should be in 2 decimal
+Not login flow 
+Documents
+
+deployment 
+Retry data should be deleted (for cn and fc)
+
+dec 12
+Validation pan card
+Validation pand card already travel
+
+dec 15
+Remitter Document Update
+Message Changes
+Inr Amount
+Edit call - pan | passport
+Iexchange Api integration Test flow
+Agent portal Bug fix
+Rate Admin CRM integration
+
+dec 16
+DSA - (1 old + 1 new)
+Create React DOM (study)
+Authentication Module (Requirement Analysis and Login Page)
+Role Module (Requirement Analysis and Multiple Role With Multiple Permission)
+React Lecture
+
+dec 18
+table update - city and state
+// Solved
+UPDATE htmlpages
+SET heading = REPLACE(heading, 'null', 'n')
+WHERE heading LIKE '%null%';
+//
+non login flow
+//
+forleads - fetchdata controller - 468 - rewrite query
+forleads - fetchlists controller - 702 - not required (as the api is not used)
+forleads - change delivery type - 756 - rewrite query - remove user id
+fxprofile -  verifytraveller controller - 413 - remove user id
+query js - orderlistnew - 665 - rewrite query
+common function - leadusersidlist - 819 - remove user id
+//
+agent portal bug fix
+rate calculator integration
+
+dec 19
+non login flow - testing
+// 
+-- flow testing
+Call a new user
+create a lead
+--- done
+agent portal fix
+
+If / not added in the aws it will not work.
+
+dec 20
+image compressor Check (Done)
+agent portal bug fix
+integration rate calculator
+
+dec 22
+create a public page 
+Send mail
+
+dec 26
+system design interview questions
+
+dec 27
+Namaste react Lecture
+System design study
+DSA study
+Interview questions

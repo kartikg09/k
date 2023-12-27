@@ -40,3 +40,11 @@ Transaction control commands are only used with the DML Commands such as - INSER
 -> Reliability is ensured by the ACID qualities.
 -> Start a transaction with "BEGIN TRANSACTION", and finish it with "COMMIT" or "ROLLBACK" to complete or undo changes. 
 -> SAVEPOINT to rollback to certain point
+
+TRUNCATE TABLE
+truncating/emptying the table.
+It have 4 options
+continue identity - default it doesn't modify or restart the value of orders.
+restart identity - reset the identity column.
+cascade - truncate all the including those tables that have foreign key references to other tables.
+restrict - default to decline truncate of the table that have foreign key references to other tables.

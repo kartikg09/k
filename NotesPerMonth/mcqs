@@ -1,0 +1,11 @@
+sorting algorithm with the best asymptotic runtime comple?
+    Merge Sort, Heap Sort, Quick Sort
+
+Data structures can erase from its beginning and its end in O(1) time?
+    dequeues (doubly-ended queues)
+
+Segment tree? useful for problems involving quering and modifying elements within a specific rande of an array or other linear data structures.
+
+linear and non linear data structures?
+linear - array, stack, queue, linked list, etc
+non linear - trees (AVL tree, binary tree, binary search tree) and graph

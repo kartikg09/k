@@ -19,7 +19,7 @@ Non Functional Requirements
 -> Scalable
 -> Performance
 
-High level design
+###### High level design ######
 -> System architecture
 -> Database design
 -> Brief description of systems, services, platforms, and relationships among modules.
@@ -83,3 +83,39 @@ Paging
 
 Logging
 
+###### Low Level Design ######
+Components
+Entities
+Component communication
+
+Convert HLD to LLD using 3 paradigm
+UML diagram - Unified Modelling Language diagram
+OOPS principals
+SOLID principals
+
+Design Patterns
+-Factory Design Pattern
+-Abstract factory Pattern
+-Singleton Pattern
+-Observer Pattern
+
+UML diagram: Diagram consist of classes, interfaces, relations
+Class diagram from Structured UML diagram.
+Sequence, Use case and Activity from Behavioral UML diagram.
+
+##### System Design #####
+Systematic process involving phases
+Planning, analysis, designing, deploying, and testing.
+
+System Analysis: Process of collecting requirements(functional and non-functional) so as to prose out any business design logic.
+long & simple process, lesser time
+System Design: Process of portraying down business logic for new ones or updating the existing ones.
+short & complex process, more time
+
+### IMP URL ###
+https://www.educative.io/blog/how-to-prepare-system-design-interview -- just read the topics
+### Relational Dbms ### (Confused)
+
+1. They are excellent at keeping data transactions secure.
+2. They provide the ability to write complex SQL queries for data analysis and reporting.
+3. Their models can ensure and enfore business rules at the data layer adding a level of data integrity not found in a non-relational database.

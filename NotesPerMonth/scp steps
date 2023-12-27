@@ -1,15 +1,15 @@
 uat solution portal:
 cd /home/admin/rtxservices
 npm run build
-scp -r pbuild kartik@10.0.2.87:/home/kartik/solutionportal
+scp -r ./pbuild kartik@10.0.2.87:/home/kartik/solutionportal/
 ssh kartik@10.0.2.87
 cd solutionportal/
-scp -r . kartik@10.0.1.241:/home/kartik/solutionportal
-yes | rm -r ./*
+scp -r . kartik@10.0.1.241:/home/kartik/solutionportal/
+rm -rf pbuild/
 ssh kartik@10.0.1.241
 sudo su
 cd /var/www/html/rtxservice/
-yes | rm -r pbuild
+rm -rf pbuild/
 mv  /home/kartik/solutionportal/* .
 pm2 reload rtxservicesfrontend
 pm2 log rtxservicesfrontend

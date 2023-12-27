@@ -1,0 +1,7 @@
+https://expressjs.com/en/guide/routing.html
+
+req.params - get data from url - eg:- /:id
+req.query - get query param - eg:- ?query=
+req.body - post data
+req.headers - headers data
+/<url-params> - url-params - regex can be used
