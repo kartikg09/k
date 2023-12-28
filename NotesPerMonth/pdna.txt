@@ -403,3 +403,12 @@ Namaste react Lecture
 System design study
 DSA study
 Interview questions
+
+dec 28
+data is the new Store - click on the component dispatches an action that calls a reducer function which update the slice of the store. To get the store object/ slice of store object we require use selector hook.
+libs - RTK, react-redux
+set up flow - use configureStore from RTK to configure redux store -> use Provider from react-redux to provide the store to react app -> use createSlice to create the slice with items - name, initialState, and reducers (contains actions) and extract reducer and action from the slice -> configure reducer in the store inside configure store object -> done
+use -> dispatch (react-redux) action (from slice) (pass the payload optional) -> call the reducer function -> update the Store
+-> subscribe to store using useSelector to get all the update from the store.
+Read more about system design interview guide (why is system design interview?) -> to understand macro level understanding of candidate
+why is algo based interview? -> To understand micro level understanding of candidate

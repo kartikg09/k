@@ -1,0 +1,128 @@
+context - central database management system
+
+redux library - managing data in our application
+usage - involves large database handling
+cons 
+- complexities
+- high learning curve
+
+redux is big object
+redux toolkit (rtk) is a new and standard to use redux 
+redux store slices with logical seperation
+slices can be - cart, user, authentication
+redux jargons - store, slice, action, dispatch
+To alter/update the store we have to dispatch an action.
+The action call the js function and modify our cart
+We cannot directly modify the cart. (it will be complex)
+The function is known as reducer.
+
+Flow:-
+Click on the component dispatches an action which call the reducer function which updates the slice of the store.
+
+How to read from redux
+selector - selecting the slice out of store
+selector to read data and update the component.
+selector is the hook and hook is the function
+- useSelector
+selector - subscribing to the store - syncing the data with data layer.
+
+npm i @reduxjs/toolkit (core of redux)
+npm i react- redux (bridge between react and redux)
+
+storejs file inside util
+The store is different and our app is different. We need to tell it. We need a provider.
+--
+import -- configureStore - toolkit
+const store = configureStore({
+    reducer: {
+      cart: cartSlice,
+    }
+});
+
+export const store;
+--
+To provide the store to our application
+use Provider from the react redux lib
+
+Create slice
+-- 
+import - createSlice - redux toolkit
+const cartSlice = createSlice({
+  name: 'cart',
+  // initialization states and its value
+  initialState: {
+    items: []
+  },
+  // modifier
+  reducers: {
+    // state argument - previous state
+    // action - it will come from dispatcher which comes from the component
+   // reducers do not return anything
+   // it take a state and modify it directly
+    addItem: (state, action) => {
+          state.items.push(action.payload);
+       },
+    removeItem: (state, action) => {
+      state.item.pop();
+    },
+    clearCart: (state) => {
+       state.item = [];
+    }
+  }
+})
+
+export const { addItem, removeItem, clearCart } = cartSlice.actions; // need to export actions
+
+export default cartSlice.reducer; //(it's not reducers (as written in the createSlice) -- combines all the reducer)
+--
+
+/**
+ Create Store
+   - configureStore() -- RTK
+
+ Provide my store to app
+   - <Provide store = {store}> - import from react-redux
+ 
+ Slice
+  - RTK - createSlice({
+                   name: "",
+                   initialState:
+                   reducers: {
+                     addItem: (state, action) => { state = action.payload }
+                   }
+                })
+      export const {addItem, removeItem} = cartSlice.actions;
+      export default cartSlice.reducer;
+
+  Put that slice into store
+             -  {
+                  reducer: {
+                    cart: cartSlice,
+                     name_of_the_slice: slice
+                  }
+                }
+*/
+
+How to subscribe to the store?
+// name  of the slice will be used as item
+const cartItems = useSelector(store => store.cart.items);
+
+How to update the slice in the store?
+const dispatch = useDispatch(); // import it from react-redux
+const handleAddItem = () => {
+   // we dispatch a action and in the action we pass the payload
+   dispatch(addItem("data"))
+}
+provider, dispatcher, selector -- coming from react redux
+configureStore, createSlice -- coming from RTK
+
+Performance 
+Subscribe to the specific slice is much optimized than subscribing to the entire store
+As the selector only view the changes happening in the slice if we subscribe to only specific slice and its state
+
+More Topics: 
+Thunk,
+Middleware, 
+RTK query
+
+Redux devtools
